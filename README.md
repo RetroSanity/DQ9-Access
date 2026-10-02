@@ -1,55 +1,75 @@
-Here's everything the mod does so far.
+Welcome to my Dragon quest 9 accessibility script to make the game accessible for the blind using the biz Hawk emulator
 
-**Speech for text on screen**
+here is a summary of what it does so far
 
-- Reads every message box one page at a time, with the name of whoever is talking.
-- Reads yes or no questions, conversation choices and information windows, such as experience earned or an accolade.
-- Announces each place when you arrive, and the building you went into.
+all  menus, battle menu and dialogue is read aloud
 
-**Menus**
+character creations has brief descriptions on what you are selecting
 
-- Reads every menu with a cursor, with your position in the list, such as "Spells, 2 of 6". Options you can't pick are called unavailable.
-- **Using an item:** says who you're aiming at and their HP.
-- **Shops:** reads prices, and when selling, how many you have.
-- **Equipment:**
-  - What's in each slot.
-  - For each item, how it would change that person's attributes, such as "Attack up 9".
-  - Whether they already wear it or can't equip it.
-- **Other screens:** the attributes screen, skill points, Battle Records, and Patty's companion screens.
-- **Starting the game:**
-  - The opening movie and the title menu, even with no save.
-  - Character creation with descriptions of each look.
-  - The gender choice.
-  - The name keyboard.
+a mod key so you can navigate through the entities, people, items, monsters etc
 
-**Battles**
+auto walk that Will walk you to the intended entity avoiding collisions and obstacles along the way, currently working on path Finder to make it more accurate
 
-- Reads every battle message, and doesn't repeat "draws near" any more.
-- Says whose turn it is when the command list comes up.
-- Reads experience, gold and level-up stat gains.
+most doors on the mod list tell you where they lead to but I'm in the process of renaming some plus more to come
 
-**Getting around**
+i have only tested this with an xbox controller but it also has keyboard support to use the mod
 
-- Says "blocked" when you walk into a wall, and names people or monsters that come close, with the direction.
-- **The nearby list (E list):** people, monsters, items, sparkly spots, events, doors, exits, objects and your own marks, nearest first. It also shows hidden things, like the item the dog finds.
-- **Doors and exits:**
-  - Doors are named by building, or by side when they have no name.
-  - Stairs are called "stairs up/down to…".
-  - Duplicate exits are collapsed to the nearest one.
-- **Directions:** D-pad steps to anything you pick.
-- **Route:** step-by-step instructions to get there (P, or R3).
-- **Auto walk:**
-  - It plans a way around walls and up or down stairs.
-  - It lines you up in front of doors.
-  - Any controller button takes back control.
-- **Marks:** save a spot with M so you can find it again.
+Here are the keysss
 
-**Quick info keys**
+list
 
-- **Party:** HP and MP, attributes and equipment.
-- **Other:** your gold, where you are, repeat, stop speech and read the whole menu.
+- **Page Down:next thing in the category, nearest first, with directions.
+- **Page Up:** previous thing in the category.
+- **Ctrl + Page Down:** next category.
+- **Ctrl + Page Up:** previous category.
+- **Ctrl + Home:** step-by-step route to the thing you picked.
+- **Ctrl + End:** auto walk there. Press it again to stop.
+- **D:** directions to the thing you picked, again.
+- **N and B:** next and previous thing, the same as Page Down and Page Up.
+- **V:** next category.
+- **P:** route there.
+- **J:** walk there.
 
-**Other**
+**Keyboard: information**
 
-- **Controller shortcuts:** hold LT with the D-pad to browse the nearby list, L3 to auto walk, and R3 for the route, your gold, or everyone's HP in battle.
--     
+- **H:** everyone's HP.
+- **M:** everyone's MP.
+- **G:** gold.
+- **W:** where you are.
+- **L:** attributes for the whole party, including level and vocation.
+- **U:** what everyone has equipped.
+- **I:** repeat the last information window, like experience earned.
+- **O:** read every option in the open menu.
+
+**Keyboard: speech and other**
+
+- **R:** repeat the last thing said.
+- **Ctrl, pressed and let go on its own:** stop speaking.
+- **Shift + M:** mark this spot.
+- **T:** turn the "blocked" and "next to you" alerts on or off.
+- **C:** save a snapshot to the log file, for reporting problems.
+- **K:** hear the list of keys.
+
+**Controller**
+
+- **Hold LT and press D-pad right or left:** next or previous category.
+- **Hold LT and press D-pad down or up:** next or previous thing in the category.
+- **Hold LT and press in the left stick (L3):** auto walk to the thing you picked. Press it again to stop.
+- **Hold LT and press in the right stick (R3):** your gold.
+- **Press in the right stick (R3) on its own:** the route to the thing you picked. If nothing is picked, it gives your gold. In a battle, it gives everyone's HP and MP.
+- **Any other controller button:** stops auto walk.
+
+While LT is held, the D-pad doesn't move you or the menus.
+
+**Game buttons on the keyboard**
+
+These keys play the game itself, and any of them also stops auto walk:
+
+- **Enter:** Start
+- **Z:** A
+- **X:** B
+- **A:** X
+- **S:** Y
+- **Q:** L
+- **E:** R
+- **Arrow keys:** D-pad        
